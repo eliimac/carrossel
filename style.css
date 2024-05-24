@@ -9,7 +9,7 @@ body{
 
 .slider{
 	margin: 0 auto;
-	width: 800px;
+	width: 1220px;
 	height: 400px;
 	overflow: hidden;
 }
@@ -30,30 +30,31 @@ body{
 }
 
 .slide img{
-	width: 800px;
+	width: auto;
 }
 
 .manual-navigation{
 	position: absolute;
-	width: 800px;
+	width: 1219px;
 	 /* é aqui que arrumamos a altura dos botoezinhos */ 
-	margin-top: -40px;
+	margin-top: -14px;
 	display: flex;
 	justify-content: center;
+
 }
 
 .manual-btn{
-	border: 2px solid #000000;
+	border:1px solid #ffffff;
 	padding: 5px;
 	border-radius: 10px;
 	cursor: pointer;
 	transition: 1s;
 }
 .manual-btn:not(:last-child){
-	margin-right:40px ;
+	margin-right:35px ;
 }
 .manual-btn:hover{
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 }
 
 #radio1:checked ~ .first{
@@ -65,12 +66,9 @@ body{
 #radio3:checked ~ .first{
 	margin-left: -50%;
 }
-#radio4:checked ~ .first{
-	margin-left: -75%;
-}
 
 .navigation-auto div{
-	border: 2px solid blue;
+	border: 2px solid rgb(245, 245, 245);
 	padding: 5px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -79,25 +77,23 @@ body{
 
 .navigation-auto{
 	position: absolute;
-	width: 800px;
-	margin-top: 360px;	 
+	width: 1219px;
+	margin-top: 386px;	 
 	display: flex;
 	justify-content: center;
 }
 
 .navigation-auto div:not(:last-child){
-	margin-right: 40px;
+	margin-right: 35px;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-	background-color: #b60000;
+	background-color: #ffffff;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-	background-color: #b60000;
+	background-color: #ffffff;
+	
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-	background-color: #b60000;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-	background-color: #b60000;
+	background-color: #ffffff;
 }
